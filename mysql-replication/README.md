@@ -58,11 +58,12 @@ You can deploy the template with Azure Portal, or PowerShell, or Azure cross pla
 > wget http://10.0.1.4:9200
 > wget http://10.0.1.5:9200
 ```
-# use following
-# mysqlrplshow  --master=admin:<admin password>@10.0.1.4:3306 --recurse --discover-slaves-login=admin:<admin_password> --verbose
+
+
 * Ensure replication topology is properly configured, assuming master is 10.0.1.4:
 ```sh
 > mysqlrplshow --master=admin:secret@10.0.1.4 --discover-slaves-login=admin:secret
+> mysqlrplshow  --master=admin:<admin password>@10.0.1.4:3306 --recurse --discover-slaves-login=admin:<admin_password> --verbose
 ```
 
 ### How to Monitor MySQL Health
